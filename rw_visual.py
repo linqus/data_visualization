@@ -10,6 +10,7 @@ while True:
 	rw = RandomWalk(5_000)
 	rw.fill_walk()
 
+	ax.plot(rw.x_values,rw.y_values,linewidth=1)
 	ax.scatter(rw.x_values,rw.y_values,s=15,edgecolors='none',c=range(rw.num_points),cmap=plt.cm.plasma)
 	ax.scatter(rw.x_values[0],rw.y_values[0],s=100,c='green',edgecolors='none')
 	ax.scatter(rw.x_values[-1],rw.y_values[-1],s=100,c='red',edgecolors='none')
