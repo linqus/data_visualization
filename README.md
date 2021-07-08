@@ -1,5 +1,5 @@
 # data visualization
-project from the crash course
+projekty z crash course
 
 ## Sześciany
 ![wartości sześcianów dla liczb całkowitych z przedziału 1-5000](/images/szesciany.png)
