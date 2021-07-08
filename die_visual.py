@@ -7,9 +7,6 @@ for x in range(1000):
 
 frequencies = []
 for i in range(1,die.sides+1):
-	frequencies.append(0)
-
-for n in results:
-	frequencies[n-1] += 1
+	frequencies.append(results.count(i))
 
 print(frequencies)
