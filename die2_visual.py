@@ -23,4 +23,4 @@ my_layout = Layout(
 				yaxis={'title':'Częstość wyniku'}
 			)
 
-offline.plot({'data':data, 'layout':my_layout},filename='2xd6.html')
+offline.plot({'data':data, 'layout':my_layout},filename='d6_d10.html')
