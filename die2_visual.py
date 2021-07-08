@@ -3,10 +3,11 @@ from plotly.graph_objs import Bar, Layout
 from plotly import offline 
 
 
-die1 = Die()
-die2 = Die(10)
+die1 = Die(8)
+die2 = Die(8)
 results = []
-for x in range(50000):
+num_rolls = 10_000_000
+for x in range(num_rolls):
 	results.append(die1.roll()+die2.roll())
 
 frequencies = []
@@ -18,7 +19,7 @@ data = [Bar(x=x_values,y=frequencies)]
 
 
 my_layout = Layout(
-				title="Wynik 50K rzutów dwiema kostkami: D6 i D10", 
+				title=f"Wynik {num_rolls} rzutów dwiema kostkami D8", 
 				xaxis={'title':'Wynik','dtick':1},
 				yaxis={'title':'Częstość wyniku'}
 			)
