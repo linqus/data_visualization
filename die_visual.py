@@ -19,7 +19,7 @@ data = [Bar(x=x_values,y=frequencies)]
 
 my_layout = Layout(
 				title="Wynik tysiąca rzutów dwiema kostkami D6", 
-				xaxis={'title':'Wynik'},
+				xaxis={'title':'Wynik','dtick':1},
 				yaxis={'title':'Częstość wyniku'}
 			)
 
