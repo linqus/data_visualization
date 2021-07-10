@@ -16,8 +16,9 @@ with open(filename) as f:
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
 
-ax.plot(dates,highs,c='Red')
-ax.plot(dates,lows,c='Blue')
+ax.plot(dates,highs,c='red',alpha=0.5)
+ax.plot(dates,lows,c='blue',alpha=0.5)
+ax.fill_between(dates,highs,lows,alpha=0.2,facecolor='blue')
 ax.set_title('Dzienne temperatury w 2018 w Sitka')
 ax.set_xlabel('',fontsize=14)
 ax.set_ylabel('Temperatura (F)',fontsize=14)
